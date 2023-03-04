@@ -1,0 +1,21 @@
+.card_list__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.pagination__container {
+  display: flex;
+  gap: 8px;
+}
+.pagination__item {
+  border: 1px solid green;
+  width: 30px;
+  height: 30px;
+}
+
+.pagination__item--selected {
+  background-color: green;
+  width: 30px;
+  height: 30px;
+}
