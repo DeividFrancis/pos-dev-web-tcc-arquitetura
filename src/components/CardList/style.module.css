@@ -1,21 +1,28 @@
 .card_list__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
 .pagination__container {
   display: flex;
   gap: 8px;
+
+  margin: 26px 0 51px;
 }
 .pagination__item {
-  border: 1px solid green;
-  width: 30px;
-  height: 30px;
+  background: #fff;
+  color: #2e2d2d;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
 }
 
 .pagination__item--selected {
-  background-color: green;
-  width: 30px;
-  height: 30px;
+  border: none;
+  color: #fff;
+  background: #2e2d2d;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
 }

@@ -14,9 +14,13 @@ export function Card({
     <Link href={`/publicacoes/${id}`}>
       <div {...rest} className={style.card__container}>
         <Image src={url} alt="" fill className={style.card__img} />
-        <h2>{title}</h2>
-        <p>Author(a): {author}</p>
-        <p>Orientador(a): {orientador}</p>
+        <div className={style["card__info"]}>
+          <h2 className={style["card__title"]}>{title}</h2>
+          <div className={style["card_description"]}>
+            <p>Author(a): {author}</p>
+            <p>Orientador(a): {orientador}</p>
+          </div>
+        </div>
       </div>
     </Link>
   );

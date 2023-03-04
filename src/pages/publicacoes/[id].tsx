@@ -5,7 +5,7 @@ import { Header } from "~/components/Header";
 import { PdfView } from "~/components/PdfView";
 import { Section } from "~/components/Section";
 import { api, IPublicacao } from "~/services/api";
-
+import style from "~/components/Card/style.module.css";
 export default function ListarPublicacoes() {
   const router = useRouter();
 
@@ -31,6 +31,11 @@ export default function ListarPublicacoes() {
     <main>
       <Header />
       <Section>
+        <h2 className={style["card__title"]}>{publicacao?.title}</h2>
+        <div className={style["card_description"]}>
+          <p>Author(a): {publicacao?.author}</p>
+          <p>Orientador(a): {publicacao?.orientador}</p>
+        </div>
         <PdfView arquivo={publicacao?.arquivo} />
       </Section>
       <Footer />
