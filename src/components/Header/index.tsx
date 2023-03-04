@@ -7,7 +7,8 @@ export function Header() {
     <header className={style.cabecalho}>
       <Logo />
       <h1 className={style["cabecalho__title"]}>
-        Repositório de TCC do Bacharelado em Arquitetura e Urbanismo
+        Repositório de TCC
+        <br /> do Bacharelado em Arquitetura e Urbanismo
       </h1>
     </header>
   );

@@ -5,8 +5,8 @@ import { Card } from "../Card";
 import { PaginationItem } from "./PaginationItem";
 import style from "./style.module.css";
 
-const TOTAL = 20;
-const PEER_PAGE = 5;
+const TOTAL = 30;
+const PEER_PAGE = 6;
 const PAGES = TOTAL / PEER_PAGE;
 
 export function CardList() {
